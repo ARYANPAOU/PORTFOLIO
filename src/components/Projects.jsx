@@ -40,15 +40,8 @@ export default function Projects() {
       title: 'KingTerest',
       technologies: ['A fullstack + Auth Pinterest clone using. TO BE UPDATED ALONG WITH LINK'],
       image: '/Projectimg/king.png',
-      link: 'https://github.com/your-kingterest'},
+      link: 'https://kingterest.vercel.app'},
 
-     
-    {
-      number: '04',
-      title: 'KingTerest',
-      technologies: ['A fullstack + Auth Pinterest clone using. TO BE UPDATED ALONG WITH LINK'],
-      image: '/Projectimg/king.png',
-      link: 'https://github.com/your-kingterest'},
 
     {
       number: '05',
