@@ -9,7 +9,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Text from './components/Text';
 import Midheading from './components/Midheading';
-import Tools from './components/tools';
+import Tools from './components/Tools';
 import Achievements from './components/Achievements';
 import Bitheading from './components/Bitheading';
 import Contactheading from './components/Contactheading';
