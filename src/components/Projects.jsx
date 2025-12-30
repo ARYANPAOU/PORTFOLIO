@@ -17,7 +17,7 @@ export default function Projects() {
       title: 'Self-Designed Portfolio',
       technologies: ['HTML', 'CSS', 'JS', 'REACT', 'TAILWIND', 'LUCIDE', '3JS REACT FIBRE'],
       image: '/Projectimg/port.png',
-      link: 'https://ARYAN_PORTFOLIO.netlify.app'
+      link: 'https://portfolioaryan-eta.vercel.app'
     },
     {
       number: '02',
