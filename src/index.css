@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color-scheme: dark;
+  cursor: url('/cursor/arrow.svg.svg'), auto;
+}
+
+
+body {
+  background-color: #212121;
+  overflow-x: hidden;
+}
+
+/* Webkit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 20px; /* thicker scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* transparent track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lch(56.93% 23.5 197.25); /* lighter cyan */
+  border-radius: 10px; /* rounded edges */
+  border: 4px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #569f9f; /* hover effect */
+}
+  
+/* Firefox */
+* {
+  scrollbar-width:inherit; /* thin scrollbar */
+  scrollbar-color: #508a8a transparent; /* thumb, track */
+}
+@font-face {
+  font-family: 'anton';
+  src: url(/fonts/Anton-Regular.ttf);
+}
+
+.anton {
+  font-family: 'anton';
+  
+}
+@font-face {
+  font-family: 'bits';
+  src: url(/fonts/static/static/BitcountSingle-Light.ttf);
+}
+
+.bits {
+  font-family: 'bits';
+}
+@font-face {
+  font-family: 'roboto';
+  src: url(/fonts/RobotoCondensed-VariableFont_wght.ttf);
+}
+
+.roboto {
+  font-family: 'roboto';
+}
+
+.glow {
+  transition: all 0.4s ease;
+}
+
+.glow:hover {
+  text-shadow: 0 0 8px rgba(0, 213, 241, 1), 0 0 16px rgba(0, 234, 255, 1);
+  transition: all 0.6s ease;
+}
+
+
+.flip-hover {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-hover:hover {
+  transform: rotateY(720deg); 
+}
+
+.comic {
+  font-family: 'comic';
+}
+@font-face {
+  font-family: 'comic';
+  src: url(/fonts/ComicNeue-Regular.ttf);
+}
+
+
+@font-face {
+  font-family: 'contacty';
+  src: url(/fonts/Contacty.ttf);
+}
+
+.contacty {
+  font-family: 'contacty';
+  
+}
+
+#tsparticles {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0 !important;
+  pointer-events: none;
+}

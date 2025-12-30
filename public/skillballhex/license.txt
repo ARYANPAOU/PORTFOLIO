@@ -1,0 +1,11 @@
+Model Information:
+* title:	Presentation Hex
+* source:	https://sketchfab.com/3d-models/presentation-hex-bc2aa69073394857be96fdd268541a0e
+* author:	plagga (https://sketchfab.com/plagga)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Presentation Hex" (https://sketchfab.com/3d-models/presentation-hex-bc2aa69073394857be96fdd268541a0e) by plagga (https://sketchfab.com/plagga) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
