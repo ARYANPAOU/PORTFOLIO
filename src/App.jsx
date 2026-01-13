@@ -41,7 +41,7 @@ const App = () => {
           <Techtools image="/techstackimages/npm.png" light={0xCB3837} title="npm" />
           <Techtools image="/techstackimages/bootstrap.png" light={0x7952B3} title="Bootstrap" />
           <Techtools image="/techstackimages/framer.png" light={0x0055FF} title="Framer" />
-          <Techtools image="/techstackimages/gsap.png" light={0x88CE02} title="GSAP" />
+          <Techtools image="/techstackimages/particles.png" light={0xCE0288} title="Particles.js" />
           <Techtools image="/techstackimages/figma.png" light={0xF24E1E} title="Figma" />
         </div>
         <Midheading text="TOOLS" text2="*automating tasks & enhancing productivity*" spacing="block text-sm text-gray-400 -translate-x-1.5 mt-3 whitespace-nowrap" />
