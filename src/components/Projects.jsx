@@ -61,7 +61,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="min-h-screen text-white p-8 md:p-16 -translate-y-55 -translate-x-40">
+    <div className="min-h-screen text-white p-4 sm:p-6 md:p-16 translate-x-0 translate-y-0 md:-translate-y-55 md:-translate-x-40">
       <style>{`
         .project-title {
           background: linear-gradient(to right, #06b6d4 0%, #06b6d4 50%, gray 60%);
@@ -105,7 +105,7 @@ export default function Projects() {
       
       {/* Floating image preview */}
       <div 
-        className="project-image-container"
+        className="project-image-container hidden md:block"
         style={{
           top: `${imagePosition}px`,
           transform: 'translateY(-50%)'
@@ -116,7 +116,7 @@ export default function Projects() {
             <img 
               src={projects[hoveredProject].image} 
               alt={projects[hoveredProject].title}
-              className="w-96 h-64 object-cover rounded-lg shadow-2xl"
+              className="w-80 h-56 lg:w-96 lg:h-64 object-cover rounded-lg shadow-2xl"
             />
           </div>
         )}
@@ -130,7 +130,7 @@ export default function Projects() {
             onMouseEnter={(e) => handleMouseEnter(index, e)}
             onMouseLeave={() => setHoveredProject(null)}
           >
-            <div className="text-gray-500 text-sm mb-4">
+            <div className="text-gray-500 text-xs sm:text-sm mb-4">
               _{project.number}
             </div>
             
@@ -141,12 +141,12 @@ export default function Projects() {
               rel="noopener noreferrer"
               className="inline-block"
             >
-              <h2 className="project-title text-5xl md:text-7xl font-bold mb-6 tracking-tight hover:underline">
+              <h2 className="project-title text-3xl sm:text-4xl md:text-7xl font-bold mb-4 sm:mb-6 tracking-tight hover:underline">
                 {project.title}
               </h2>
             </a>
 
-            <div className="flex flex-wrap gap-6 text-gray-400 text-sm md:text-base">
+            <div className="flex flex-wrap gap-3 sm:gap-6 text-gray-400 text-xs sm:text-sm md:text-base">
               {project.technologies.map((tech, techIndex) => (
                 <span key={techIndex}>{tech}</span>
               ))}

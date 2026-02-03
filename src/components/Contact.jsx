@@ -118,12 +118,12 @@ function Contact() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-8 gap-8">
+    <div className="relative flex flex-col md:flex-row items-center justify-center min-h-screen p-4 sm:p-6 md:p-8 gap-8">
       {/* Contact Form Left */}
       <form
         ref={formRef} // ADD THIS
         onSubmit={handleSubmit}
-        className="shadow-[0_8px_0_0_#06b6d4] hover:shadow-[0_12px_0_0_#06b6d4] transition-transform transform hover:-translate-y-2 duration-300 w-full md:w-1/3 rounded-2xl p-6"
+        className="shadow-[0_8px_0_0_#06b6d4] hover:shadow-[0_12px_0_0_#06b6d4] transition-transform transform hover:-translate-y-2 duration-300 w-full md:w-[420px] rounded-2xl p-6"
       >
         <h2 className="text-3xl font-semibold text-gray-300 bits mb-4 text-center">
           CONTACT ME
@@ -143,20 +143,20 @@ function Contact() {
         )}
 
         {/* First Name & Last Name */}
-        <div className="flex gap-3 mb-4">
+        <div className="flex flex-col sm:flex-row gap-3 mb-4">
           <input
             type="text"
             name="first_name"
             placeholder="ARYAN"
             required
-            className="w-1/2 p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            className="w-full sm:w-1/2 p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-400"
           />
           <input
             type="text"
             name="last_name"
             placeholder="PAOU"
             required
-            className="w-1/2 p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            className="w-full sm:w-1/2 p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-400"
           />
         </div>
 
@@ -232,9 +232,9 @@ function Contact() {
       </form>
 
       {/* 3D Globe Right */}
-      <div ref={containerRef} className="w-full md:w-1/2 h-[500px]"></div>
+      <div ref={containerRef} className="w-full md:w-1/2 h-[320px] sm:h-[420px] md:h-[500px]"></div>
       {/* Resume Card - Bottom Left */}
-<div className="absolute bottom-4 left-4 scale-[0.80] origin-bottom-left">
+<div className="static md:absolute md:bottom-4 md:left-4 scale-[0.80] origin-bottom-left mt-8 md:mt-0">
   <a href="/ARYANRESUME.pdf" download>
     <div className="duration-300 hover:-rotate-0 -rotate-12 group border border-cyan-400 border-4 overflow-hidden rounded-2xl h-52 w-72 bg-cyan-400/10 p-5 flex flex-col items-start gap-4">
 
