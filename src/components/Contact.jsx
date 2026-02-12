@@ -235,7 +235,7 @@ function Contact() {
       <div ref={containerRef} className="w-full md:w-1/2 h-[320px] sm:h-[420px] md:h-[500px]"></div>
       {/* Resume Card - Bottom Left */}
 <div className="static md:absolute md:bottom-4 md:left-4 scale-[0.80] origin-bottom-left mt-8 md:mt-0">
-  <a href="/ARYANLNKDIN.pdf" download>
+  <a href="/RESUME-ARYAN.pdf" download>
     <div className="duration-300 hover:-rotate-0 -rotate-12 group border border-cyan-400 border-4 overflow-hidden rounded-2xl h-52 w-72 bg-cyan-400/10 p-5 flex flex-col items-start gap-4">
 
       <div className="text-cyan-400">
