@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Midheading({ text, text2, spacing}) {
+function Midheading({ text, text2, spacing }) {
   return (
-    <div className='mx-150 mb-44 -translate-y-60 text-center'>
-      <span className='h2 text-gray-300  anton text-7xl flex-inline align-middle justify-center glow'>{text}</span>
-    <span className={`block text-sm text-gray-400 px-10 whitespace-nowrap ${spacing}`}>{text2}</span>
+    <div className='mb-14 sm:mb-16 lg:mb-20 text-center px-4'>
+      <span className='text-gray-300 anton text-4xl sm:text-5xl lg:text-7xl inline-block glow'>{text}</span>
+      <span className={`block text-xs sm:text-sm text-gray-400 mt-2 ${spacing || ''}`}>{text2}</span>
     </div>
   )
 }

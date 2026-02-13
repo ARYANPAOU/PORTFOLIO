@@ -8,10 +8,10 @@ const Backtotop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 w-10 h-10 rounded-full bg-gray-500 flex items-center justify-center shadow-[0_0_0_3px_rgba(0,255,255,0.25)] overflow-hidden transition-all duration-300 hover:h-20 hover:bg-gray-600"
+      className="fixed bottom-6 right-6 w-10 h-10 rounded-full bg-gray-500 hover:bg-gray-600 flex items-center justify-center shadow-[0_0_0_3px_rgba(0,255,255,0.25)] transition-colors duration-300 z-50"
     >
       <svg
-        className="w-3 transition-transform duration-300"
+        className="w-3"
         viewBox="0 0 384 512"
       >
         <path

@@ -102,7 +102,7 @@ const Hero = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-250 mt-6 h-180 -translate-y-[520px] translate-x-[220px] "
+      className="relative w-full max-w-3xl h-[320px] sm:h-[420px] lg:h-[500px] mx-auto -mt-24 lg:-mt-32"
     />
   );
 };

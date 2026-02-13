@@ -19,28 +19,16 @@ import Backtotop from './components/Backtotop';
 const App = () => {
   return (
     <div className="relative w-full min-h-screen overflow-x-hidden">
+      <ParticlesBg />
 
-      {/* ================= PARTICLES (DESKTOP ONLY) ================= */}
-      <div className="hidden md:block">
-        <ParticlesBg />
-      </div>
-
-      {/* ================= MOBILE LANDING ================= */}
-      <div className="block md:hidden relative min-h-screen flex items-center justify-center overflow-hidden text-white">
-
-        {/* Animated gradient background */}
+      <div className="relative z-10 block md:hidden min-h-screen flex items-center justify-center overflow-hidden text-white">
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-blue-600/20 to-slate-900 animate-pulse"></div>
-
-        {/* Glow blobs */}
         <div className="absolute -top-24 -left-24 w-72 h-72 bg-cyan-400/30 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 -right-24 w-80 h-80 bg-blue-500/30 rounded-full blur-3xl"></div>
 
-        {/* Content */}
         <div className="relative z-10 text-center px-8 space-y-5 tracking-wide">
-          <h1 className="text-3xl font-semibold">
-            Aryan Paou
-          </h1>
-<div className="flex justify-center">
+          <h1 className="text-3xl font-semibold">Aryan Paou</h1>
+          <div className="flex justify-center">
             <img
               src="/pfp/me.jpg"
               alt="Aryan"
@@ -50,49 +38,34 @@ const App = () => {
           <p className="text-xs text-gray-300">
             I love your phone, but this portfolio needs a bigger screen and lesser thumbs 👎🏻
           </p>
-
-          {/* Divider */}
           <div className="w-12 h-px bg-cyan-400 mx-auto opacity-40"></div>
-
           <p className="text-sm text-gray-400 leading-relaxed">
-            This portfolio is crafted with immersive 3D visuals and 
-           runs GPU-heavy Three.js scenes and complex UI.
+            This portfolio is crafted with immersive 3D visuals and runs GPU-heavy Three.js scenes and complex UI.
           </p>
-
-          <p className="text-sm text-cyan-400 font-medium">
-            🖥️Best experienced on a desktop or laptop 🖥️
-          </p>
+          <p className="text-sm text-cyan-400 font-medium">🖥️Best experienced on a desktop or laptop 🖥️</p>
         </div>
       </div>
 
-      {/* ================= DESKTOP PORTFOLIO ================= */}
-      <div className="hidden md:block relative">
+      <div className="hidden md:block relative z-10">
+        <Navbar />
 
         <div id="home">
           <Text />
         </div>
 
-        <Navbar />
-
-        <div id="education">
+        <section id="education" className="px-4 lg:px-8">
           <Hero />
-        </div>
+        </section>
 
-        <Flowerheading
-          text="EDUCATION PROFILE"
-          translateY="-translate-y-120"
-        />
+        <Flowerheading text="EDUCATION PROFILE" />
 
         <div id="technologies">
           <Aboutedu />
         </div>
 
-        <Midheading
-          text="TECH STACK"
-          text2="*you may interact with the hex-spheres*"
-        />
+        <Midheading text="TECH STACK" text2="*you may interact with the hex-spheres*" />
 
-        <div className="flex flex-wrap justify-center gap-0.5 -translate-y-105 px-4">
+        <div className="flex flex-wrap justify-center gap-1 px-4 lg:px-8 mb-16">
           <Techtools image="/techstackimages/javascript.png" light={0xF7DF1E} title="JavaScript" />
           <Techtools image="/techstackimages/css.png" light={0x2965F1} title="CSS" />
           <Techtools image="/techstackimages/html.png" light={0xE34F26} title="HTML" />
@@ -108,20 +81,13 @@ const App = () => {
           <Techtools image="/techstackimages/figma.png" light={0xF24E1E} title="Figma" />
         </div>
 
-        <Midheading
-          text="TOOLS"
-          text2="*automating tasks & enhancing productivity*"
-          spacing="block text-sm text-gray-400 -translate-x-1.5 mt-3 whitespace-nowrap"
-        />
+        <Midheading text="TOOLS" text2="*automating tasks & enhancing productivity*" />
 
         <div id="projects">
           <Tools />
         </div>
 
-        <Flowerheading
-          text="PROJECTS + UPCOMING"
-          translateY="-translate-y-50"
-        />
+        <Flowerheading text="PROJECTS + UPCOMING" />
 
         <Projects />
 
@@ -129,7 +95,7 @@ const App = () => {
           <Bitheading />
         </div>
 
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center gap-5 px-4 pb-12">
           <Achievements image="/certificates/MICROSOFT.jpeg" caption="SCIF MICROSOFT" />
           <Achievements image="/certificates/CYBERCERT.jpeg" caption="EC-COUNCIL CYBERSECURITY" />
           <Achievements image="/certificates/NPTEL1.jpeg" caption="NPTEL SILVER MEDAL" />

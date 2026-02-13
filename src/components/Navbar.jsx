@@ -9,13 +9,12 @@ const Navbar = () => {
   };
 
   return (
-    <>
       <nav className="w-full">
         <div className="fixed top-3 left-1/2 transform -translate-x-1/2 
-                        w-[70%] max-w-3xl h-9 rounded-2xl overflow-clip
+                        w-[92%] lg:w-[70%] max-w-4xl h-10 rounded-2xl overflow-clip
                         bg-white/10 backdrop-blur-xl shadow-lg 
                         border border-white/20 z-50">
-          <ul className="flex justify-around items-center h-full text-white font-medium tracking-wide">
+          <ul className="flex justify-around items-center h-full text-[11px] sm:text-xs lg:text-sm text-white font-medium tracking-wide px-2">
             <li 
               className="cursor-pointer hover:text-[rgba(0,213,241,1)] glow transition"
               onClick={() => scrollToSection('home')}
@@ -56,8 +55,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div className="h-[calc(4rem+0.75rem)]" />
-    </>
   );
 };
 

@@ -14,7 +14,7 @@ const tools = [
 
 function Tools() {
   return (
-    <div className="border-2 border-gray-300 ml-18 px-4 py-2 -translate-y-90 translate-x-115 flex flex-wrap items-center justify-center gap-2 rounded-md w-fit mx-auto  ">
+    <div className="border border-gray-300 px-4 py-3 flex flex-wrap items-center justify-center gap-3 rounded-md max-w-3xl mx-auto mb-20">
       {tools.map((tool) => (
         <div key={tool.alt} className="relative group">
           <img
