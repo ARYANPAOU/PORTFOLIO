@@ -130,7 +130,9 @@ const App = () => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-5">
-          <Achievements image="/certificates/MICROSOFT.jpeg" caption="SCIF MICROSOFT" />
+          <Achievements image="/certificates/MICROSOFT.jpeg" caption="SCIF-900 MICROSOFT" />
+          <Achievements image="/certificates/google.png" caption="SCIF GOOGLE ANALYTICS" />
+          <Achievements image="/certificates/hp.png" caption="SCIF HP AI CRITICAL THINKING" />
           <Achievements image="/certificates/CYBERCERT.jpeg" caption="EC-COUNCIL CYBERSECURITY" />
           <Achievements image="/certificates/NPTEL1.jpeg" caption="NPTEL SILVER MEDAL" />
           <Achievements image="/certificates/NPTEL5.jpeg" caption="NPTEL SILVER MEDAL" />
