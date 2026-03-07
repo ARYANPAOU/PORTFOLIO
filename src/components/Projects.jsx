@@ -15,7 +15,7 @@ export default function Projects() {
   {
   number: '01',
   title: 'IoT Based Smart Helmet',
-   hardware: [
+   technologies: [
     'ESP8266 / ESP32 Microcontroller',
     'MPU6050 Accelerometer Sensor',
     'NEO-6M GPS Module',
