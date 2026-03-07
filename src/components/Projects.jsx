@@ -12,54 +12,67 @@ export default function Projects() {
   };
 
   const projects = [
-    {
-      number: '01',
-      title: 'Self-Designed Portfolio',
-      technologies: ['HTML', 'CSS', 'JS', 'REACT', 'TAILWIND', 'LUCIDE', '3JS REACT FIBRE'],
-      image: '/Projectimg/port.png',
-      link: 'https://portfolioaryan-eta.vercel.app'
-    },
-    {
-      number: '02',
-       title: 'SPOTI-SENSE',
-      technologies: ['A Unique, self-thought idea of a vibe coded game using React, 3js, Tailwind'],
-      image: '/Projectimg/spoti.png',
-      link: 'https://spoti-sense.netlify.app'
-     
-    },
-     {
-      number: '03',
-      title: 'DOVE-OF-LOVE',
-      technologies: ['FUN VIBE CODED COUPLE COMPLAINT FORM USING REACT'],
-      image: '/Projectimg/king.png',
-      link: 'https://doveoflove.netlify.app'},
+  {
+  number: '01',
+  title: 'IoT Based Smart Helmet',
+   hardware: [
+    'ESP8266 / ESP32 Microcontroller',
+    'MPU6050 Accelerometer Sensor',
+    'NEO-6M GPS Module',
+    'GSM Module (SIM800L or equivalent)',
+    'Rechargeable Lithium Battery'
+  ],
+  image: '/Projectimg/helmet1.jpeg',
+  Documentation: 'https://pdflink.to/82bab5a3/'
+},
 
-     
-    {
-      number: '04',
-      title: 'KingTerest',
-      technologies: ['A fullstack + Auth Pinterest clone using. TO BE UPDATED ALONG WITH LINK'],
-      image: '/Projectimg/king.png',
-      link: 'https://kingterest.vercel.app'},
+{
+  number: '02',
+  title: 'Self-Designed Portfolio',
+  technologies: ['HTML', 'CSS', 'JS', 'REACT', 'TAILWIND', 'LUCIDE', '3JS REACT FIBRE'],
+  image: '/Projectimg/port.png',
+  link: 'https://portfolioaryan-eta.vercel.app'
+},
 
+{
+  number: '03',
+  title: 'SPOTI-SENSE',
+  technologies: ['A Unique, self-thought idea of a vibe coded game using React, 3js, Tailwind'],
+  image: '/Projectimg/spoti.png',
+  link: 'https://spoti-sense.netlify.app'
+},
 
-    {
-      number: '05',
-        title: 'CyberPunk [3js showcase]',
-      technologies: ['3JS-NON-FIBRE','POLY-HAVEN . TO BE UPDATED ALONG WITH LINK'],
-      image: '/Projectimg/cyber.png',
-      link: 'https://your-cyberpunk-demo.com'
-    },
-    
-    {
-      number: '06',
-      title: 'SCROLL TRIGGER MODEL',
-      technologies: ['TO BE UPDATED ALONG WITH LINK'],
-      image: '/Projectimg/tba.png',
-      link: '#'
-    }
-  ];
+{
+  number: '04',
+  title: 'DOVE-OF-LOVE',
+  technologies: ['FUN VIBE CODED COUPLE COMPLAINT FORM USING REACT'],
+  image: '/Projectimg/king.png',
+  link: 'https://doveoflove.netlify.app'
+},
 
+{
+  number: '05',
+  title: 'KingTerest',
+  technologies: ['A fullstack + Auth Pinterest clone using. TO BE UPDATED ALONG WITH LINK'],
+  image: '/Projectimg/king.png',
+  link: 'https://kingterest.vercel.app'
+},
+
+{
+  number: '06',
+  title: 'CyberPunk [3js showcase]',
+  technologies: ['3JS-NON-FIBRE','POLY-HAVEN . TO BE UPDATED ALONG WITH LINK'],
+  image: '/Projectimg/cyber.png',
+  link: 'https://your-cyberpunk-demo.com'
+},
+
+{
+  number: '07',
+  title: 'SCROLL TRIGGER MODEL',
+  technologies: ['TO BE UPDATED ALONG WITH LINK'],
+  image: '/Projectimg/tba.png',
+  link: '#'
+}
   return (
     <div className="min-h-screen text-white p-4 sm:p-6 md:p-16 translate-x-0 translate-y-0 md:-translate-y-55 md:-translate-x-40">
       <style>{`
