@@ -73,7 +73,9 @@ export default function Projects() {
   image: '/Projectimg/tba.png',
   link: '#'
 }
-  return (
+];
+
+return (
     <div className="min-h-screen text-white p-4 sm:p-6 md:p-16 translate-x-0 translate-y-0 md:-translate-y-55 md:-translate-x-40">
       <style>{`
         .project-title {
